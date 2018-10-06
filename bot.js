@@ -470,7 +470,7 @@ client.on('message', message => {
   ` + '`' + prefix + 'setStatus` - **لتغيير حالة البوت**' + `
 
 
-`Forèst To The Top`
+
   if(message.content === prefix + 'help') {
     message.author.send(helplist);
   }
