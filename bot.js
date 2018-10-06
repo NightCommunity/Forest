@@ -408,7 +408,7 @@ function play(guild, song) {
 
 //admin
 
-const devs = ['315927449823084545','427611667631964180','412373041675370497,'443469963186143235'];
+const devs = ['315927449823084545','427611667631964180','412373041675370497,'];
 
 client.on('message', message => {
     let argresult = message.content.split(` `).slice(1).join(' ');
