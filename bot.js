@@ -23,10 +23,10 @@ client.on('error', console.error);
 
 client.on('ready', () => {
     console.log(`Created By:xÝousşef`);
-    console.log(`Developed By:- RaiDèèèr♪`);
+    console.log(`Developed By:.LiVeè`);
     console.log(`Guilds: ${client.guilds.size}`);
     console.log(`Users: ${client.users.size}`);
-    client.user.setActivity('Alhassny Orders.',{type: 'WATCHING'});
+    client.user.setActivity('Forèst.',{type: 'WATCHING'});
 });
 
 client.on('message', async msg => {
@@ -35,7 +35,7 @@ client.on('message', async msg => {
 
     const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
   if (msg.content.match(prefixMention)) {
-    return msg.reply(`My prefix is \`${prefix}\``);
+    return msg.reply(`My prefix is \`1{prefix}\``);
   }
 
 if(!msg.content.startsWith(prefix)) return undefined;
@@ -43,7 +43,7 @@ if(!msg.content.startsWith(prefix)) return undefined;
   const args = msg.content.slice(prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 
-    const url = args[1] ? args[1].replace(/<(.+)>/g, '$1') : '';
+    const url = args[1] ? args[1].replace(/<(.+)>/g, '1') : '';
 
     let cmds = {
       play: { cmd: 'play', a: ['p'] },
@@ -408,12 +408,12 @@ function play(guild, song) {
 
 //admin
 
-const devs = ['315927449823084545','427611667631964180','412373041675370497,'];
+const devs = ['315927449823084545','427611667631964180','412373041675370497'];
 
 client.on('message', message => {
     let argresult = message.content.split(` `).slice(1).join(' ');
     if (message.content.startsWith(prefix + 'setStreaming')) {
-      if (!devs.includes(message.author.id)) return message.channel.send("<@449313863494664214> only this guy can do restart the bot so don't try again :wink:.");
+      if (!devs.includes(message.author.id)) return message.channel.send("<315927449823084545> only this guy can do restart the bot so don't try again :wink:.");
       message.delete();
       client.user.setGame(argresult, 'https://twitch.tv/DynastyShop');
 
@@ -470,7 +470,7 @@ client.on('message', message => {
   ` + '`' + prefix + 'setStatus` - **لتغيير حالة البوت**' + `
 
 
-
+**Forèst To Top**`
   if(message.content === prefix + 'help') {
     message.author.send(helplist);
   }
